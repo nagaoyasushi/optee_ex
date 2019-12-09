@@ -88,7 +88,7 @@ int main(void)
 	if (res != TEEC_SUCCESS)
 		errx(1, "TEEC_InvokeCommand failed with code 0x%x origin 0x%x",
 			res, err_origin);
-	printf("TA incremented value to %d(test)\n", op.params[0].value.a);
+	printf("TA incremented value to %d(test_br)\n", op.params[0].value.a);
 
 	/*
 	 * We're done with the TA, close the session and
